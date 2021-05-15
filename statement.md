@@ -1,11 +1,23 @@
-# Welcome!
+// create an array
+let favoriteFoods = ["pizza", "tacos", "pasta"];
 
-This Node.js template lets you get started quickly with a simple one-page playground.
 
-```javascript runnable
-console.log('Hello World!');
-```
+// change last element
+// favoriteFoods[2] = "veggie burgers";
+favoriteFoods[favoriteFoods.length - 1] = "veggie burgers";
 
-# Advanced usage
+// remove first element and store in variable
+let formerFavoriteFood = favoriteFoods.shift();
 
-If you want a more complex example (external libraries, viewers...), use the [Advanced Node.js template](https://tech.io/select-repo/442)
+// add to end of arrays
+favoriteFoods.push("nachos");
+
+// add to start of array
+favoriteFoods.unshift("veggie platter");
+
+
+
+
+// check
+console.log(`former favorite food removed: ${formerFavoriteFood}`);
+console.log(favoriteFoods);
